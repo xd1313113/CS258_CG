@@ -1,4 +1,3 @@
-
 /*  This program is a modified version of the program "image.c"
  *  appearing in _The OpenGL Programming Guide_ (red book).
  *  It demonstrates drawing pixels and shows the effect
@@ -19,6 +18,15 @@
 #include <GL/glut.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
+#include <iostream>
+#include <string>
+#include <vector>
+
+#include "Dispatcher.h"
+
+
+using namespace std;
 
 /*	Create checkerboard image	*/
 #define	checkImageWidth 1024
@@ -30,16 +38,18 @@ static GLint height;
 void
 makeCheckImage(void)
 {
-   int i, j, c;
+    int i, j, c;
 
-   for (i = 0; i < checkImageHeight; i++) {
-      for (j = 0; j < checkImageWidth; j++) {
-         c = ((((i&0x8)==0)^((j&0x8)==0)))*255;
-         checkImage[i][j][0] = (GLubyte) c;
-         checkImage[i][j][1] = (GLubyte) c;
-         checkImage[i][j][2] = (GLubyte) c;
-      }
-   }
+    for (i = 0; i < checkImageHeight; i++)
+    {
+        for (j = 0; j < checkImageWidth; j++)
+        {
+            c = ((((i&0x8)==0)^((j&0x8)==0)))*255;
+            checkImage[i][j][0] = (GLubyte) c;
+            checkImage[i][j][1] = (GLubyte) c;
+            checkImage[i][j][2] = (GLubyte) c;
+        }
+    }
 }
 
 /*
@@ -53,10 +63,10 @@ makeCheckImage(void)
 void
 init(void)
 {
-   glClearColor (0.0, 0.0, 0.0, 0.0);
-   glShadeModel(GL_FLAT);
-   makeCheckImage();
-   glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+    glClearColor (0.0, 0.0, 0.0, 0.0);
+    glShadeModel(GL_FLAT);
+    makeCheckImage();
+    glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 }
 
 /*
@@ -70,11 +80,11 @@ init(void)
 void
 display(void)
 {
-   glClear(GL_COLOR_BUFFER_BIT);
-   glRasterPos2i(0, 0);
-   glDrawPixels(checkImageWidth, checkImageHeight, GL_RGB,
-                GL_UNSIGNED_BYTE, checkImage);
-   glFlush();
+    glClear(GL_COLOR_BUFFER_BIT);
+    glRasterPos2i(0, 0);
+    glDrawPixels(checkImageWidth, checkImageHeight, GL_RGB,
+                 GL_UNSIGNED_BYTE, checkImage);
+    glFlush();
 }
 
 /*
@@ -89,13 +99,13 @@ display(void)
 void
 reshape(int w, int h)
 {
-   glViewport(0, 0, (GLsizei) w, (GLsizei) h);
-   height = (GLint) h;
-   glMatrixMode(GL_PROJECTION);
-   glLoadIdentity();
-   gluOrtho2D(0.0, (GLdouble) w, 0.0, (GLdouble) h);
-   glMatrixMode(GL_MODELVIEW);
-   glLoadIdentity();
+    glViewport(0, 0, (GLsizei) w, (GLsizei) h);
+    height = (GLint) h;
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluOrtho2D(0.0, (GLdouble) w, 0.0, (GLdouble) h);
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
 }
 
 /*
@@ -109,12 +119,12 @@ reshape(int w, int h)
 void
 motion(int x, int y)
 {
-   static GLint screeny;
+    static GLint screeny;
 
-   screeny = height - (GLint) y;
-   glRasterPos2i (x, screeny);
-   glCopyPixels (0, 0, checkImageWidth, checkImageHeight, GL_COLOR);
-   glFlush ();
+    screeny = height - (GLint) y;
+    glRasterPos2i (x, screeny);
+    glCopyPixels (0, 0, checkImageWidth, checkImageHeight, GL_COLOR);
+    glFlush ();
 }
 
 /*
@@ -134,51 +144,51 @@ motion(int x, int y)
 void
 mouse(int button, int press, int x, int y)
 {
-  static int state, start_x, start_y;
+    static int state, start_x, start_y;
 
-  GLint viewport[4];
-  int height;
+    GLint viewport[4];
+    int height;
 
-  printf("Mouse: %d %d\n", x, y);
-  switch(button)
-  {
-      case GLUT_LEFT_BUTTON:
-	if(press == GLUT_DOWN)
+    printf("Mouse: %d %d\n", x, y);
+    switch(button)
+    {
+    case GLUT_LEFT_BUTTON:
+        if(press == GLUT_DOWN)
         {
-	   if(!state)
-           {
-	     glGetIntegerv(GL_VIEWPORT, viewport);
-	     height = abs(viewport[3]-viewport[1]);
-             glColor3f(1.0, 0.0, 0.0);
-             glBegin(GL_POINTS);
-             glVertex2i(x, height - y);
-	     glEnd();
-	     glFlush();
-             state = 1;
-             start_x = x;
-	     start_y = y;
-	   }
-	   else
-           {
-	     state = 0;
-	     display();
-	   }
-	}
-	break;
-     case GLUT_RIGHT_BUTTON:
-	if (press == GLUT_DOWN)
+            if(!state)
+            {
+                glGetIntegerv(GL_VIEWPORT, viewport);
+                height = abs(viewport[3]-viewport[1]);
+                glColor3f(1.0, 0.0, 0.0);
+                glBegin(GL_POINTS);
+                glVertex2i(x, height - y);
+                glEnd();
+                glFlush();
+                state = 1;
+                start_x = x;
+                start_y = y;
+            }
+            else
+            {
+                state = 0;
+                display();
+            }
+        }
+        break;
+    case GLUT_RIGHT_BUTTON:
+        if (press == GLUT_DOWN)
         {
-	  glGetIntegerv(GL_VIEWPORT, viewport);
-	  height = abs(viewport[3]-viewport[1]);
-	  glColor3f(1.0, 0.0, 0.0);
-	  glBegin(GL_LINES);
-	  glVertex2i(start_x, height - start_y);
-	  glVertex2i(x, height - y);
-	  glEnd();
-	  glFlush();
-	}
-	break;
-  }
+            glGetIntegerv(GL_VIEWPORT, viewport);
+            height = abs(viewport[3]-viewport[1]);
+            glColor3f(1.0, 0.0, 0.0);
+            glBegin(GL_LINES);
+            glVertex2i(start_x, height - start_y);
+            glVertex2i(x, height - y);
+            glEnd();
+            glFlush();
+        }
+        break;
+    }
 }
 
 /*
@@ -191,20 +201,25 @@ mouse(int button, int press, int x, int y)
 void
 main_loop(char line[])
 {
-   /* PUT YOUR CLI CODE HERE! */
+    /* PUT YOUR CLI CODE HERE! */
+    string currentCommand="";
+    vector<string> parameters;
 
-   if (line == NULL)
-   {
-      printf("Exiting...\n");
-      exit(0);
-   }
-   else
-      printf("RESULT: %s\n",line);
+    if (line == NULL)
+    {
+        printf("Exiting...\n");
+        exit(0);
+    }
+    else if(string(line)!=""){
+        Dispatcher* dispatcher = new Dispatcher(line);
+        dispatcher->registerCmd("move");
+        dispatcher->run();
+    }
 
-   printf("CLI> ");
-   fflush(stdout);
+    printf("CLI> ");
+    fflush(stdout);
 
-   return;
+    return;
 }
 
 #define MAXLINE 1024
@@ -229,48 +244,48 @@ main_loop(char line[])
 void
 read_next_command(unsigned char key, int x, int y)
 {
-   static char line[MAXLINE];
-   static int count;
+    static char line[MAXLINE];
+    static int count;
 
-   if(count >= MAXLINE - 1)
-   {
-      printf("Error: Maximum line length exceeded. Discarded input.\n");
-      count = 0;
-      return;
-   }
+    if(count >= MAXLINE - 1)
+    {
+        printf("Error: Maximum line length exceeded. Discarded input.\n");
+        count = 0;
+        return;
+    }
 
-   putchar(key);
-   fflush(stdout);  /* Immediate output (gratification) */
+    putchar(key);
+    fflush(stdout);  /* Immediate output (gratification) */
 
-   if (key != CR && key != BS && key != DEL && key != ESC && key != EOT)
-   {
-      line[count]=key;
-      count++;
-   }
-   else if (key == BS || key == DEL)
-   {
-      if(count == 0)
-         return;
+    if (key != CR && key != BS && key != DEL && key != ESC && key != EOT)
+    {
+        line[count]=key;
+        count++;
+    }
+    else if (key == BS || key == DEL)
+    {
+        if(count == 0)
+            return;
 
-      fflush(stdout);
-      count--;
-   }
-   else if (key == CR)
-   {
-      printf("\n");
-      line[count] = '\0';
-      count = 0;
-      main_loop(line);
-   }
-   else if (key == ESC)
-   {
-      glutPostRedisplay();
-   }
-   else
-   {
-      printf("Exiting...\n");
-      exit(0);
-   }
+        fflush(stdout);
+        count--;
+    }
+    else if (key == CR)
+    {
+        printf("\n");
+        line[count] = '\0';
+        count = 0;
+        main_loop(line);
+    }
+    else if (key == ESC)
+    {
+        glutPostRedisplay();
+    }
+    else
+    {
+        printf("Exiting...\n");
+        exit(0);
+    }
 }
 
 /*
@@ -283,21 +298,21 @@ read_next_command(unsigned char key, int x, int y)
 int
 main(int argc, char** argv)
 {
-   glutInit(&argc, argv);
-   glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-   glutInitWindowSize(250, 250);
-   glutInitWindowPosition(100, 100);
-   glutCreateWindow(argv[0]);
-   init();
-   glutDisplayFunc(display);
-   glutReshapeFunc(reshape);
-   glutKeyboardFunc(read_next_command);
-   glutMouseFunc(mouse);
-   //   glutMotionFunc(motion);
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+    glutInitWindowSize(250, 250);
+    glutInitWindowPosition(100, 100);
+    glutCreateWindow(argv[0]);
+    init();
+    glutDisplayFunc(display);
+    glutReshapeFunc(reshape);
+    glutKeyboardFunc(read_next_command);
+    glutMouseFunc(mouse);
+    //   glutMotionFunc(motion);
 
-   printf("CLI> ");
-   fflush(stdout);
+    printf("CLI> ");
+    fflush(stdout);
 
-   glutMainLoop();
-   return 0;
+    glutMainLoop();
+    return 0;
 }
