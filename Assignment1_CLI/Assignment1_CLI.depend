@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1390171622 source:/home/di/cppworkspace/CS258CG/Assignment1_CLI/main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+
