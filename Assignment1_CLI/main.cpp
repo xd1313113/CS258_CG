@@ -202,6 +202,7 @@ void
 main_loop(char line[])
 {
     /* PUT YOUR CLI CODE HERE! */
+    cout<<"debug"<<endl;
     string currentCommand="";
     vector<string> parameters;
 
@@ -210,9 +211,10 @@ main_loop(char line[])
         printf("Exiting...\n");
         exit(0);
     }
-    else if(string(line)!=""){
+    else if(string(line)!="")
+    {
+        cout<<"debug"<<endl;
         Dispatcher* dispatcher = new Dispatcher(line);
-        dispatcher->registerCmd("move");
         dispatcher->run();
     }
 

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1390258155 source:/home/di/cppworkspace/CS258CG/Assignment1_CLI/main.cpp
+1390326568 source:/home/di/cppworkspace/CS258CG/Assignment1_CLI/main.cpp
 	<GL/glut.h>
 	<stdlib.h>
 	<stdio.h>
@@ -13,8 +13,10 @@
 	"CMDMove.h"
 	<iostream>
 
-1390247182 source:/home/di/cppworkspace/CS258CG/Assignment1_CLI/CMDRead.cpp
+1390273120 source:/home/di/cppworkspace/CS258CG/Assignment1_CLI/CMDRead.cpp
 	"CMDRead.h"
+	"Dispatcher.h"
+	<fstream>
 	<string>
 	<iostream>
 
@@ -28,11 +30,13 @@
 	"Command.h"
 	<string>
 
-1390257136 source:/home/di/cppworkspace/CS258CG/Assignment1_CLI/Dispatcher.cpp
+1390278254 source:/home/di/cppworkspace/CS258CG/Assignment1_CLI/Dispatcher.cpp
 	"Dispatcher.h"
 	"Command.h"
 	"CMDRead.h"
 	"CMDMove.h"
+	"CMDDraw.h"
+	"CMDColor.h"
 	<algorithm>
 
 1390251860 /home/di/cppworkspace/CS258CG/Assignment1_CLI/Dispatcher.h
@@ -41,4 +45,18 @@
 	<string>
 	<vector>
 	<set>
+
+1390277899 source:/home/di/cppworkspace/CS258CG/Assignment1_CLI/CMDColor.cpp
+	"CMDColor.h"
+	<iostream>
+
+1390277899 /home/di/cppworkspace/CS258CG/Assignment1_CLI/CMDColor.h
+	"Command.h"
+
+1390277801 source:/home/di/cppworkspace/CS258CG/Assignment1_CLI/CMDDraw.cpp
+	"CMDDraw.h"
+	<iostream>
+
+1390277767 /home/di/cppworkspace/CS258CG/Assignment1_CLI/CMDDraw.h
+	"Command.h"
 

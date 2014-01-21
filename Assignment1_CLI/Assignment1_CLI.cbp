@@ -14,12 +14,12 @@
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
-		        <Linker>
-			        <Add library="lib/libGL.so" />
-			        <Add library="lib/libGLEW.so" />
-			        <Add library="lib/libGLU.so" />
-			        <Add library="lib/libglut.so" />
-		        </Linker>
+				<Linker>
+					<Add library="lib/libGL.so" />
+					<Add library="lib/libGLEW.so" />
+					<Add library="lib/libGLU.so" />
+					<Add library="lib/libglut.so" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/CS258CLI" prefix_auto="1" extension_auto="1" />
@@ -38,6 +38,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="CMDColor.cpp" />
+		<Unit filename="CMDColor.h" />
+		<Unit filename="CMDDraw.cpp" />
+		<Unit filename="CMDDraw.h" />
+		<Unit filename="CMDMove.cpp" />
+		<Unit filename="CMDMove.h" />
+		<Unit filename="CMDRead.cpp" />
+		<Unit filename="CMDRead.h" />
+		<Unit filename="Command.h" />
+		<Unit filename="Dispatcher.cpp" />
+		<Unit filename="Dispatcher.h" />
 		<Unit filename="include/GL/gl.h" />
 		<Unit filename="include/GL/gl_mangle.h" />
 		<Unit filename="include/GL/glext.h" />
