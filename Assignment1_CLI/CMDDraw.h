@@ -1,6 +1,7 @@
 #include "Command.h"
 
-class CMDDraw:public Command{
+class CMDDraw:public Command
+{
 private:
     float x, y ,z;
 public:

@@ -3,10 +3,11 @@
 
 using namespace std;
 
-CMDMove::CMDMove(int x = 0, int y = 0 , int z =0):x(x),y(y),z(z){}
+CMDMove::CMDMove(float x = 0, float y = 0 , float z =0):x(x),y(y),z(z) {}
 
-CMDMove::~CMDMove(){}
+CMDMove::~CMDMove() {}
 
-void CMDMove::execute(){
+void CMDMove::execute()
+{
     cout<<"Moving to ("<<x<<", "<<y<<", "<<z<<");"<<endl;
 }

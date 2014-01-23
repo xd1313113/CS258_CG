@@ -1,10 +1,11 @@
 #include "Command.h"
 
-class CMDMove:public Command{
+class CMDMove:public Command
+{
 private:
-    int x, y ,z;
+    float x, y ,z;
 public:
-    CMDMove(int x, int y, int z);
+    CMDMove(float x, float y, float z);
     ~CMDMove();
     void execute();
 };

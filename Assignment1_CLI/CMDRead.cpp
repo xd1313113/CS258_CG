@@ -6,16 +6,15 @@
 
 using namespace std;
 
-CMDRead::CMDRead(string file):filename(file){}
+CMDRead::CMDRead(string file):filename(file) {}
 
-CMDRead::~CMDRead(){}
+CMDRead::~CMDRead() {}
 
-void CMDRead::execute(){
-    cout<<"Read command"<<endl;
-
+void CMDRead::execute()
+{
     std::string line;
 
-    std::ifstream input(filename);
+    std::ifstream input(filename.c_str());
     if(!input)
     {
         std::cout << "Could not open the given file, please check and try again" << std::endl;

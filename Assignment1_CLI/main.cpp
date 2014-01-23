@@ -202,10 +202,6 @@ void
 main_loop(char line[])
 {
     /* PUT YOUR CLI CODE HERE! */
-    cout<<"debug"<<endl;
-    string currentCommand="";
-    vector<string> parameters;
-
     if (line == NULL)
     {
         printf("Exiting...\n");
@@ -213,7 +209,6 @@ main_loop(char line[])
     }
     else if(string(line)!="")
     {
-        cout<<"debug"<<endl;
         Dispatcher* dispatcher = new Dispatcher(line);
         dispatcher->run();
     }

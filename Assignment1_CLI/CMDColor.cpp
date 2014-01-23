@@ -3,11 +3,12 @@
 
 using namespace std;
 
-CMDColor::CMDColor(int v = 0, int h = 0 , int s =0):v(v),h(h),s(s){}
+CMDColor::CMDColor(int v = 0, int h = 0 , int s =0):v(v),h(h),s(s) {}
 
-CMDColor::~CMDColor(){}
+CMDColor::~CMDColor() {}
 
-void CMDColor::execute(){
+void CMDColor::execute()
+{
     cout<<"Color with("<<v<<", "<<h<<", "<<s<<");"<<endl;
 }
 

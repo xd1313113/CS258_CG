@@ -1,7 +1,8 @@
 #include "Command.h"
 #include<string>
 
-class CMDRead: public Command{
+class CMDRead: public Command
+{
 private:
     string filename;
 public:

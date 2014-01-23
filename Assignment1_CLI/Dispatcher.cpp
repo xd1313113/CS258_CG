@@ -25,7 +25,7 @@ void Dispatcher::CLI_Dispatch()
 {
     transform(currentCommand.begin(), currentCommand.end(), currentCommand.begin(), ::tolower);
 
-    Command* cmd;
+    Command* cmd = 0;
     if(currentCommand == "")
     {
         cout<<"Blank Command;"<<endl;
@@ -49,10 +49,10 @@ void Dispatcher::CLI_Dispatch()
     }
     else if (currentCommand == "move")
     {
-        int paras[3] = {0,0,0};
+        float paras[3] = {0.0,0.0,0.0};
         for(unsigned i = 0; i < parameters.size(); i++)
         {
-            paras[i] = atoi(parameters.at(i).c_str());
+            paras[i] = atof(parameters.at(i).c_str());
         }
         cmd = new CMDMove(paras[0],paras[1],paras[2]);
         cmd->execute();
@@ -83,6 +83,8 @@ void Dispatcher::CLI_Dispatch()
     {
         cout<<"unknown error"<<endl;
     }
+    if(cmd != 0)
+        delete cmd;
 }
 
 bool Dispatcher::checkString(char* str)
