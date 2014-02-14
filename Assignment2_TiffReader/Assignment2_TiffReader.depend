@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1390432956 source:/home/di/cppworkspace/CS258CG/Assignment2_TiffReader/CMDDraw.cpp
+	"CMDDraw.h"
+	<iostream>
+
+1390432963 /home/di/cppworkspace/CS258CG/Assignment2_TiffReader/CMDDraw.h
+	"Command.h"
+
+1391472396 /home/di/cppworkspace/CS258CG/Assignment2_TiffReader/Command.h
+	<iostream>
+
+1390440566 source:/home/di/cppworkspace/CS258CG/Assignment2_TiffReader/CMDMove.cpp
+	"CMDMove.h"
+	<iostream>
+
+1390440539 /home/di/cppworkspace/CS258CG/Assignment2_TiffReader/CMDMove.h
+	"Command.h"
+
+1392346908 source:/home/di/cppworkspace/CS258CG/Assignment2_TiffReader/CMDRead.cpp
+	"CMDRead.h"
+	"Dispatcher.h"
+	<fstream>
+	<string>
+	<iostream>
+
+1391939973 /home/di/cppworkspace/CS258CG/Assignment2_TiffReader/CMDRead.h
+	"Command.h"
+	<string>
+	"AppContext.h"
+
+1392193745 /home/di/cppworkspace/CS258CG/Assignment2_TiffReader/Dispatcher.h
+	<string.h>
+	<iostream>
+	<string>
+	<vector>
+	<set>
+	"AppContext.h"
+
+1392345613 source:/home/di/cppworkspace/CS258CG/Assignment2_TiffReader/Dispatcher.cpp
+	"Dispatcher.h"
+	"Command.h"
+	"CMDRead.h"
+	"tiff.h"
+	<algorithm>
+
+1390277899 /home/di/cppworkspace/CS258CG/Assignment2_TiffReader/CMDColor.h
+	"Command.h"
+
+1392282999 source:/home/di/cppworkspace/CS258CG/Assignment2_TiffReader/main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<string>
+	<vector>
+	"Dispatcher.h"
+	"AppContext.h"
+	"tiff.h"
+
+1391470395 source:/home/di/cppworkspace/CS258CG/Assignment2_TiffReader/CMDColor.cpp
+	"CMDColor.h"
+	<iostream>
+	"Command.h"
+
+1390242694 source:/home/di/cppworkspace/CS258CG/Assignment2_TiffReader/Command.cpp
+
+1392342969 /home/di/cppworkspace/CS258CG/Assignment2_TiffReader/tiff.h
+	"Command.h"
+	<GL/glut.h>
+	<fstream>
+	<vector>
+	"AppContext.h"
+	<fstream>
+
+1392346510 source:/home/di/cppworkspace/CS258CG/Assignment2_TiffReader/tiff.cpp
+	"tiff.h"
+	<string.h>
+	<algorithm>
+	<fstream>
+	<string>
+	<iostream>
+
+1392189509 /home/di/cppworkspace/CS258CG/Assignment2_TiffReader/AppContext.h
+	<GL/glut.h>
+

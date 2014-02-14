@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Assignment2_TiffReader" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Assignment2_TiffReader" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="lib/libGLU.so" />
+					<Add library="lib/libglut.so" />
+					<Add library="lib/libGLEW.so" />
+					<Add library="lib/libGL.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Assignment2_TiffReader" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="AppContext.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="CMDRead.cpp" />
+		<Unit filename="CMDRead.h" />
+		<Unit filename="Command.cpp" />
+		<Unit filename="Command.h" />
+		<Unit filename="Dispatcher.cpp" />
+		<Unit filename="Dispatcher.h" />
+		<Unit filename="include/GL/gl.h" />
+		<Unit filename="include/GL/gl_mangle.h" />
+		<Unit filename="include/GL/glext.h" />
+		<Unit filename="include/GL/glu.h" />
+		<Unit filename="include/GL/glu_mangle.h" />
+		<Unit filename="include/GL/glut.h" />
+		<Unit filename="include/GL/glutf90.h" />
+		<Unit filename="include/GL/glx.h" />
+		<Unit filename="include/GL/glx_mangle.h" />
+		<Unit filename="include/GL/glxext.h" />
+		<Unit filename="include/GL/glxint.h" />
+		<Unit filename="include/GL/glxmd.h" />
+		<Unit filename="include/GL/glxproto.h" />
+		<Unit filename="include/GL/glxtokens.h" />
+		<Unit filename="include/GL/internal/glcore.h" />
+		<Unit filename="include/GL/osmesa.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="tiff.cpp" />
+		<Unit filename="tiff.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

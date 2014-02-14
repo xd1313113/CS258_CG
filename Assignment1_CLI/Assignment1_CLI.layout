@@ -2,39 +2,39 @@
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
 	<File name="CMDColor.cpp" open="1" top="0" tabpos="11">
-		<Cursor position="158" topLine="0" />
+		<Cursor position="63" topLine="0" />
 	</File>
 	<File name="CMDColor.h" open="1" top="0" tabpos="12">
 		<Cursor position="119" topLine="0" />
 	</File>
 	<File name="CMDDraw.cpp" open="1" top="0" tabpos="9">
-		<Cursor position="208" topLine="0" />
+		<Cursor position="62" topLine="0" />
 	</File>
 	<File name="CMDDraw.h" open="1" top="0" tabpos="10">
-		<Cursor position="123" topLine="0" />
+		<Cursor position="86" topLine="0" />
 	</File>
 	<File name="CMDMove.cpp" open="1" top="0" tabpos="8">
-		<Cursor position="0" topLine="0" />
+		<Cursor position="137" topLine="0" />
 	</File>
 	<File name="CMDMove.h" open="1" top="0" tabpos="7">
-		<Cursor position="0" topLine="0" />
+		<Cursor position="128" topLine="0" />
 	</File>
 	<File name="CMDRead.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="167" topLine="0" />
+		<Cursor position="304" topLine="7" />
 	</File>
 	<File name="CMDRead.h" open="1" top="0" tabpos="5">
-		<Cursor position="61" topLine="0" />
+		<Cursor position="38" topLine="0" />
 	</File>
 	<File name="Command.h" open="1" top="0" tabpos="4">
 		<Cursor position="84" topLine="0" />
 	</File>
 	<File name="Dispatcher.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="2819" topLine="113" />
+		<Cursor position="1947" topLine="123" />
 	</File>
 	<File name="Dispatcher.h" open="1" top="0" tabpos="3">
-		<Cursor position="112" topLine="0" />
+		<Cursor position="130" topLine="1" />
 	</File>
 	<File name="main.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="7257" topLine="282" />
+		<Cursor position="5395" topLine="153" />
 	</File>
 </CodeBlocks_layout_file>

@@ -1,0 +1,15 @@
+tiffwrite test.tif
+tiffread 7.tif
+tiffstat 1.tif
+tiffread 1.tif 
+tiffwrite test_color.tif
+tiffwrite test_color_part.tif 10,10,100,150
+tiffstat test_color_part.tif
+tiffread test_color_part.tif
+tiffstat test_color.tif
+tiffread test_color.tif
+tiffstat 5.tif
+tiffread 5.tif 
+tiffwrite test_gray.tif
+tiffread test_gray.tif
+
