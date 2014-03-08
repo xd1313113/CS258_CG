@@ -1,0 +1,64 @@
+tiffread pooh.tif
+border zero
+zoom 2.0
+tiffwrite pooh_border_zero.tif
+
+tiffread pooh.tif
+border freeze
+zoom 2.0
+tiffwrite pooh_border_freeze.tif
+
+tiffread pooh.tif
+border circular
+zoom 2.0
+tiffwrite pooh_border_circular.tif
+
+tiffread pooh.tif
+select lanczos
+zoom 2.0
+tiffwrite pooh_lanczos.tif
+
+tiffread pooh.tif
+select gaussian 1.0
+zoom 2.0
+tiffwrite pooh_gaussian1.tif
+
+tiffread pooh.tif
+select gaussian 2.0
+zoom 2.0
+tiffwrite pooh_gaussian2.tif
+
+tiffread pooh.tif
+select gaussian 3.0
+zoom 2.0
+tiffwrite pooh_gaussian3.tif
+
+tiffread pooh.tif
+select gaussian 4.0
+zoom 2.0
+tiffwrite pooh_gaussian4.tif
+
+tiffread pooh.tif
+select mitchell
+zoom 2.0
+tiffwrite pooh_mitchell.tif
+
+tiffread pooh.tif
+select hamming
+zoom 2.0
+tiffwrite pooh_hamming.tif
+
+tiffread pooh.tif
+select hann
+zoom 2.0
+tiffwrite pooh_hann.tif
+
+tiffread pooh.tif
+select triangle
+zoom 2.0
+tiffwrite pooh_triangle.tif
+
+tiffread pooh.tif
+select box
+zoom 2.0
+tiffwrite pooh_box.tif

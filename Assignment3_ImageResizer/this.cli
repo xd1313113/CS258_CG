@@ -1,0 +1,3 @@
+tiffread 1.tif
+border freeze
+resize -2.0 2.0
