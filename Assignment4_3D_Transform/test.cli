@@ -1,0 +1,43 @@
+read cube_test_1.cli
+tiffwrite cube_test_1_c.tif
+reset
+read cube_test_2.cli
+tiffwrite cube_test_2_c.tif
+reset
+read cube_test_3.cli
+tiffwrite cube_test_3_c.tif
+reset
+read face.cli
+tiffwrite face_c.tif
+reset
+read faces.cli
+tiffwrite faces_c.tif
+reset
+read junk.cli
+tiffwrite junk_c.tif
+reset
+read orient.cli
+tiffwrite orient_c.tif
+reset
+read orient2.cli
+tiffwrite orient2_c.tif
+reset
+read orient3.cli
+tiffwrite orient3_c.tif
+reset
+read ortho.cli
+tiffwrite ortho_c.tif
+reset
+read ortho_test.cli
+tiffwrite ortho_test_c.tif
+reset
+read persp.cli
+tiffwrite persp_c.tif
+reset
+read rot.cli
+tiffwrite rot_c.tif
+reset
+read simple.cli
+tiffwrite simple_c.tif
+reset
+

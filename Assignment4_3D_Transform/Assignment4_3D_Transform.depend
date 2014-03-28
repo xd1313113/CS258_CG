@@ -1,0 +1,95 @@
+# depslib dependency file v1.0
+1395974211 source:/home/di/CS258/CS258_CG/Assignment4_3D_Transform/CMDRead.cpp
+	"CMDRead.h"
+	"Dispatcher.h"
+	<fstream>
+	<string>
+	<iostream>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment4_3D_Transform/CMDRead.h
+	"Command.h"
+	<string>
+	"AppContext.h"
+
+1394681399 /home/di/CS258/CS258_CG/Assignment4_3D_Transform/Command.h
+	<iostream>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment4_3D_Transform/AppContext.h
+	<GL/glut.h>
+	<string.h>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment4_3D_Transform/Dispatcher.h
+	<string.h>
+	<iostream>
+	<string>
+	<vector>
+	<set>
+	"AppContext.h"
+
+1394681399 source:/home/di/CS258/CS258_CG/Assignment4_3D_Transform/Command.cpp
+
+1395774659 source:/home/di/CS258/CS258_CG/Assignment4_3D_Transform/Dispatcher.cpp
+	"Dispatcher.h"
+	"Command.h"
+	"CMDRead.h"
+	"tiff.h"
+	"ImageResizer.h"
+	"transformation.h"
+	<algorithm>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment4_3D_Transform/tiff.h
+	"Command.h"
+	<fstream>
+	<vector>
+	"AppContext.h"
+	<fstream>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment4_3D_Transform/ImageResizer.h
+	<math.h>
+	"Command.h"
+	<string.h>
+
+1394681399 source:/home/di/CS258/CS258_CG/Assignment4_3D_Transform/ImageResizer.cpp
+	"ImageResizer.h"
+	"tiff.h"
+	<algorithm>
+	<math.h>
+	<time.h>
+	<iomanip>
+
+1395957774 source:/home/di/CS258/CS258_CG/Assignment4_3D_Transform/main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<string>
+	<vector>
+	"Dispatcher.h"
+	"AppContext.h"
+	"tiff.h"
+
+1395972833 source:/home/di/CS258/CS258_CG/Assignment4_3D_Transform/tiff.cpp
+	"tiff.h"
+	<string.h>
+	<algorithm>
+	<fstream>
+	<string>
+	<iostream>
+
+1395884411 /home/di/CS258/CS258_CG/Assignment4_3D_Transform/transformation.h
+	"Command.h"
+
+1395972277 /home/di/CS258/CS258_CG/Assignment4_3D_Transform/3D.h
+	<stdio.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<cmath>
+
+1395971195 source:/home/di/CS258/CS258_CG/Assignment4_3D_Transform/transformation.cpp
+	"transformation.h"
+	"AppContext.h"
+	<iostream>
+	"3D.h"
+	"tiff.h"
+
