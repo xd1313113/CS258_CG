@@ -76,3 +76,72 @@
 	<time.h>
 	<iomanip>
 
+1394681399 source:/home/di/CS258/CS258_CG/Assignment3_ImageResizer/CMDRead.cpp
+	"CMDRead.h"
+	"Dispatcher.h"
+	<fstream>
+	<string>
+	<iostream>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment3_ImageResizer/CMDRead.h
+	"Command.h"
+	<string>
+	"AppContext.h"
+
+1394681399 /home/di/CS258/CS258_CG/Assignment3_ImageResizer/Command.h
+	<iostream>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment3_ImageResizer/AppContext.h
+	<GL/glut.h>
+	<string.h>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment3_ImageResizer/Dispatcher.h
+	<string.h>
+	<iostream>
+	<string>
+	<vector>
+	<set>
+	"AppContext.h"
+
+1394681399 source:/home/di/CS258/CS258_CG/Assignment3_ImageResizer/Command.cpp
+
+1394681399 source:/home/di/CS258/CS258_CG/Assignment3_ImageResizer/Dispatcher.cpp
+	"Dispatcher.h"
+	"Command.h"
+	"CMDRead.h"
+	"tiff.h"
+	"ImageResizer.h"
+	<algorithm>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment3_ImageResizer/tiff.h
+	"Command.h"
+	<fstream>
+	<vector>
+	"AppContext.h"
+	<fstream>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment3_ImageResizer/ImageResizer.h
+	<math.h>
+	"Command.h"
+	<string.h>
+
+1394681399 source:/home/di/CS258/CS258_CG/Assignment3_ImageResizer/ImageResizer.cpp
+	"ImageResizer.h"
+	"tiff.h"
+	<algorithm>
+	<math.h>
+	<time.h>
+	<iomanip>
+
+1394681399 source:/home/di/CS258/CS258_CG/Assignment3_ImageResizer/main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<string>
+	<vector>
+	"Dispatcher.h"
+	"AppContext.h"
+	"tiff.h"
+
