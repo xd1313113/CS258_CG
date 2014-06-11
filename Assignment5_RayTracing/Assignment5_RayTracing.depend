@@ -1,0 +1,166 @@
+# depslib dependency file v1.0
+1398066212 source:/home/di/CS258/CS258_CG/Assignment5_RayTracing/main.cpp
+	<GL/glut.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<string>
+	<vector>
+	"Dispatcher.h"
+	"AppContext.h"
+	"tiff.h"
+
+1398015032 /home/di/CS258/CS258_CG/Assignment5_RayTracing/Dispatcher.h
+	<string.h>
+	<iostream>
+	<string>
+	<vector>
+	<set>
+	"AppContext.h"
+	"RayTracer.h"
+
+1394681399 /home/di/CS258/CS258_CG/Assignment5_RayTracing/AppContext.h
+	<GL/glut.h>
+	<string.h>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment5_RayTracing/tiff.h
+	"Command.h"
+	<fstream>
+	<vector>
+	"AppContext.h"
+	<fstream>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment5_RayTracing/Command.h
+	<iostream>
+
+1398015424 source:/home/di/CS258/CS258_CG/Assignment5_RayTracing/CMDRead.cpp
+	"CMDRead.h"
+	"Dispatcher.h"
+	<fstream>
+	<string>
+	<iostream>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment5_RayTracing/CMDRead.h
+	"Command.h"
+	<string>
+	"AppContext.h"
+
+1394681399 source:/home/di/CS258/CS258_CG/Assignment5_RayTracing/Command.cpp
+
+1398394996 source:/home/di/CS258/CS258_CG/Assignment5_RayTracing/Dispatcher.cpp
+	"Dispatcher.h"
+	"Command.h"
+	"CMDRead.h"
+	"tiff.h"
+	"ImageResizer.h"
+	"transformation.h"
+	"RayTracer.h"
+	<algorithm>
+
+1397876510 /home/di/CS258/CS258_CG/Assignment5_RayTracing/ImageResizer.h
+	<math.h>
+	"Command.h"
+	<string.h>
+
+1395884411 /home/di/CS258/CS258_CG/Assignment5_RayTracing/transformation.h
+	"Command.h"
+
+1397876495 source:/home/di/CS258/CS258_CG/Assignment5_RayTracing/ImageResizer.cpp
+	"ImageResizer.h"
+	"tiff.h"
+	<algorithm>
+	<math.h>
+	<time.h>
+	<iomanip>
+
+1398395810 source:/home/di/CS258/CS258_CG/Assignment5_RayTracing/tiff.cpp
+	"tiff.h"
+	<string.h>
+	<algorithm>
+	<fstream>
+	<string>
+	<iostream>
+
+1395971195 source:/home/di/CS258/CS258_CG/Assignment5_RayTracing/transformation.cpp
+	"transformation.h"
+	"AppContext.h"
+	<iostream>
+	"3D.h"
+	"tiff.h"
+
+1397416889 /home/di/CS258/CS258_CG/Assignment5_RayTracing/3D.h
+	<stdio.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<cmath>
+
+1398410717 source:/home/di/CS258/CS258_CG/Assignment5_RayTracing/RayTracer.cpp
+	"RayTracer.h"
+	<GL/glut.h>
+	<iostream>
+	"AppContext.h"
+	"tiff.h"
+	<limits>
+	<math.h>
+	<time.h>
+	<iomanip>
+
+1398392615 /home/di/CS258/CS258_CG/Assignment5_RayTracing/RayTracer.h
+	"Object.h"
+	"Light.h"
+	<vector>
+	"Camera.h"
+
+1394681399 /home/di/CS258/CS258_CG/Assignment5_RayTracing/include/GL/glut.h
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/mesa_wgl.h>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment5_RayTracing/include/GL/gl.h
+	"gl_mangle.h"
+	<stdlib.h>
+	<windows.h>
+	<GL/mesa_wgl.h>
+	<GL/glext.h>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment5_RayTracing/include/GL/gl_mangle.h
+
+1394681399 /home/di/CS258/CS258_CG/Assignment5_RayTracing/include/GL/glext.h
+	<windows.h>
+	<stddef.h>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment5_RayTracing/include/GL/glu.h
+	"glu_mangle.h"
+	<GL/gl.h>
+
+1394681399 /home/di/CS258/CS258_CG/Assignment5_RayTracing/include/GL/glu_mangle.h
+
+1398409164 source:/home/di/CS258/CS258_CG/Assignment5_RayTracing/Object.cpp
+	"Object.h"
+	<iostream>
+
+1398393222 /home/di/CS258/CS258_CG/Assignment5_RayTracing/Object.h
+	"Vector3.h"
+	"Ray.h"
+	<vector>
+
+1398057407 /home/di/CS258/CS258_CG/Assignment5_RayTracing/Camera.h
+	"Vector3.h"
+	"Ray.h"
+	<iostream>
+
+1398013358 /home/di/CS258/CS258_CG/Assignment5_RayTracing/Vector3.h
+	<cmath>
+	<iostream>
+
+1398057321 /home/di/CS258/CS258_CG/Assignment5_RayTracing/Ray.h
+	"Vector3.h"
+
+1398110668 /home/di/CS258/CS258_CG/Assignment5_RayTracing/Light.h
+	"Vector3.h"
+
+1397876153 /home/di/CS258/CS258_CG/Assignment5_RayTracing/include/Object.h
+	"Vector3.h"
+	"Ray.h"
+

@@ -1,0 +1,14 @@
+Compilation:
+Simply run "make" to compile
+Then run "read test.cli" which will generate 5 images
+
+Extra Tasks:
+I implement task 1, 2, 3, 4 in the extra credits section
+All the generated scene contains plane, Box, triangles, spheres.
+
+Details:
+a.cli is the file providing diffuse render, which takes 4.3s
+als.cli is the file providing specular render, which takes 6.83s
+ap.cli is the file providing Phond shading, which takes 4.37s
+alm.cli is the file providing metallic style Fresnel approximation, which take 4.47s
+o1.cli is the orthocamera.

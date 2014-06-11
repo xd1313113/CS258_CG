@@ -1,0 +1,15 @@
+clear
+read a.cli
+tiffwrite a.tif
+clear
+read als.cli
+tiffwrite als.tif
+clear
+read ap.cli
+tiffwrite ap.tif
+clear
+read alm.cli
+tiffwrite alm.tif
+clear
+read o1.cli
+tiffwrite o1.tif
