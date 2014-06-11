@@ -1,4 +1,34 @@
-This program implements all the commands including orient and tiffwrite as extra credits.
+3D Transformations
+============
+
+An c++ to implement 3D transfor-
+mations. 
+
+Implement a matrix stack, and translate, rotate, scale, and view
+an object via both orthographic and perspective projections.
+
+Users stories
+--------------
+- Users could translate, rotate, scale 3D models.
+
+![Image Alt](/demo/faces_c.png)
+- Rotate Test
+
+![Image Alt](/demo/junk_c.png)
+- Rotate and Perspective test.
+
+![Image Alt](/demo/ortho_test.png)
+- Ortho projection test.
+
+![Image Alt](/demo/persp_c.png)
+- Perspective test.
+
+![Image Alt](/demo/orient2_c.png)
+- Orient object.
+
+![Image Alt](/demo/orient3_c.png)
+- Non-affine transformation.
+
 
 I have write a script called test.cli.
 When you open the main window, the command "read test.cli" will generate all the test cases and save the as tif with suffix "_c".
