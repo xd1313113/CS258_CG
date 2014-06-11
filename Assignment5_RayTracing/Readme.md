@@ -7,19 +7,19 @@ Users stories
 --------------
 - Users could translate, rotate, scale 3D models.
 
-![Image Alt](/demo/a.png)
+![Image Alt](/Assignment5_RayTracing/demo/a.png)
 - Diffuse render
 
-![Image Alt](/demo/als.png)
+![Image Alt](/Assignment5_RayTracing/demo/als.png)
 - Specular render
 
-![Image Alt](/demo/ap.png)
+![Image Alt](/Assignment5_RayTracing/demo/ap.png)
 - Phond shading
 
-![Image Alt](/demo/alm.png)
+![Image Alt](/Assignment5_RayTracing/demo/alm.png)
 - metallic style Fresnel approximation
 
-![Image Alt](/demo/o1.png)
+![Image Alt](/Assignment5_RayTracing/demo/o1.png)
 - Ortho Camera
 
 Compilation:

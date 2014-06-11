@@ -9,40 +9,40 @@ Users stories
 - Choose algorithm to fill up border: zero, freeze and circular.
 - Handle negative scale factors. A negative scale should reflect as well as resize
 
-![Image Alt](/demo/1.png)
+![Image Alt](/Assignment3_ImageResizer/demo/1.png)
 - Original Photo
 
-![Image Alt](/demo/8.png)
+![Image Alt](/Assignment3_ImageResizer/demo/8.png)
 - Double image with negative parameter.
 
-![Image Alt](/demo/pooh.png)
+![Image Alt](/Assignment3_ImageResizer/demo/pooh.png)
 - Original Photo
 
-![Image Alt](/demo/pooh_border_circular.png)
+![Image Alt](/Assignment3_ImageResizer/demo/pooh_border_circular.png)
 - Double zoom in image with circular algorithm.
 
-![Image Alt](/demo/pooh_box.png)
+![Image Alt](/Assignment3_ImageResizer/demo/pooh_box.png)
 - Double zoom in image with using Box filter.
 
-![Image Alt](/demo/pooh_gaussian1.png)
+![Image Alt](/Assignment3_ImageResizer/demo/pooh_gaussian1.png)
 - Double zoom in image with using Gaussian at width 1.
 
-![Image Alt](/demo/pooh_gaussian4.png)
+![Image Alt](/Assignment3_ImageResizer/demo/pooh_gaussian4.png)
 - Double zoom in image with using Gaussian at width 4.
 
-![Image Alt](/demo/pooh_hamming.png)
+![Image Alt](/Assignment3_ImageResizer/demo/pooh_hamming.png)
 - Double zoom in image with using Hamming filter.
 
-![Image Alt](/demo/pooh_hann.png)
+![Image Alt](/Assignment3_ImageResizer/demo/pooh_hann.png)
 - Double zoom in image with using Hann filter.
 
-![Image Alt](/demo/pooh_lanczos.png)
+![Image Alt](/Assignment3_ImageResizer/demo/pooh_lanczos.png)
 - Double zoom in image with using Lanczos filter.
 
-![Image Alt](/demo/pooh_mitchell.png)
+![Image Alt](/Assignment3_ImageResizer/demo/pooh_mitchell.png)
 - Double zoom in image with using Mitchell filter.
 
-![Image Alt](/demo/pooh_triangle.png)
+![Image Alt](/Assignment3_ImageResizer/demo/pooh_triangle.png)
 - Double zoom in image with using Triangle filter.
 
 # Compilation

@@ -11,22 +11,22 @@ Users stories
 --------------
 - Users could translate, rotate, scale 3D models.
 
-![Image Alt](/demo/faces_c.png)
+![Image Alt](/Assignment4_3D_Transform/demo/faces_c.png)
 - Rotate Test
 
-![Image Alt](/demo/junk_c.png)
+![Image Alt](/Assignment4_3D_Transform/demo/junk_c.png)
 - Rotate and Perspective test.
 
-![Image Alt](/demo/ortho_test.png)
+![Image Alt](/Assignment4_3D_Transform/demo/ortho_test.png)
 - Ortho projection test.
 
-![Image Alt](/demo/persp_c.png)
+![Image Alt](/Assignment4_3D_Transform/demo/persp_c.png)
 - Perspective test.
 
-![Image Alt](/demo/orient2_c.png)
+![Image Alt](/Assignment4_3D_Transform/demo/orient2_c.png)
 - Orient object.
 
-![Image Alt](/demo/orient3_c.png)
+![Image Alt](/Assignment4_3D_Transform/demo/orient3_c.png)
 - Non-affine transformation.
 
 
