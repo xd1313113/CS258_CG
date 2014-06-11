@@ -17,7 +17,7 @@ Users stories
 ![Image Alt](/Assignment4_3D_Transform/demo/junk_c.png)
 - Rotate and Perspective test.
 
-![Image Alt](/Assignment4_3D_Transform/demo/ortho_test.png)
+![Image Alt](/Assignment4_3D_Transform/demo/ortho_test_c.png)
 - Ortho projection test.
 
 ![Image Alt](/Assignment4_3D_Transform/demo/persp_c.png)
